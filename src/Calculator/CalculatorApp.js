@@ -6,8 +6,12 @@ import ButtonComp from './ButtonComp'
 const CalculatorApp = () => {
     let [input,setinput]=useState('')
     let handleClick=(value)=>{
-        if(value =='='){
+        if(value ==='='){
+            try{
             setinput(eval(input))
+            }catch(error){
+               setinput("error")
+            }
         }else{
         setinput(input+value)
     }
