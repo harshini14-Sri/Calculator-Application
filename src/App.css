@@ -1,0 +1,11 @@
+
+.calculator{
+  text-align: center;
+}
+.button-elements{
+  display: grid;
+  grid-template-columns: 30px 30px 30px 30px;
+  
+  margin-top: 10px;
+  justify-content: center;
+}
